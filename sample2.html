@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+    
+
+        <button onclick="test();">100 입력받기</button> <!--버튼 안에 js함수 실행-->
+        <button id="getnumber">100 또 입력받기</button>
+        <a href="#javascript:test()">링크로 100 입력받기</a> <br />
+
+
+        <script>
+
+            test();
+            function test() {
+                var value = prompt("100을 입력 해 주세요");
+                if (value == "100") {
+                    alert("제대로 입력되었습니다.");
+                } else {
+                    alert("100이 아니라" + value + "이 입력되었습니다");
+                    test();
+                }
+            }
+            document.getElementById('getnumber')
+            .addEventListener(
+                'click' ,
+                function() {
+                    test();
+                }
+            );
+        
+
+
+            </script>
+    </body>
+</html>

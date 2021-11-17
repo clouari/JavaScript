@@ -4,7 +4,42 @@
     </head>
     <body>
 
-    <script>
+        <script>
+
+            test();
+            function test() {
+                var value = prompt("100을 입력 해 주세요");
+                if (value == "100") {
+                    alert("제대로 입력되었습니다.");
+                } else {
+                    alert("100이 아니라" + value + "이 입력되었습니다");
+                    test();
+                }
+            }
+
+            /*
+            var value = prompt("100을 입력 해 주세요.");
+            study(value);
+
+            function study(value) {
+                if (value == "100") {
+                    alert("제대로 입력되었습니다.");
+                } else {
+                    alert("100이 아니라" + value + "이 입력되었습니다");
+                }
+            }
+
+            /*
+       var value = prompt("성함이 어떻게 되시나요?");
+        alert(value + "님 안녕하세요!!");
+
+
+
+        var value = confirm("안녕하신가요?")
+        console.log(value);
+        console.log(typeof(value));//값을 확인하기 위해 console.log
+
+
         var i = 100;
         var j = "300";
         var k = i + j ;  // 전역 변수 i를 선언 + 100을 입력
@@ -13,18 +48,23 @@
         // console.log(typeof(j) ); // string
         // console.log(typeof(k) ); // string
 
-        var returni = myfunction(i); 
-        var returnj =myfunction(j); 
-        var returnk =myfunction(k);    // 위에 있는 변수를 넣는다. 
+        var returni = myfunction(i);
+        var returnj = myfunction(j);
+        var returnk = myfunction(k);
+
+        console.log(returni);
+        console.log(returnj);
+        console.log(returnk);
 
         function myfunction(value) {
             console.log(typeof(value));  // 어떤 타입인지 console.log에 찍어~
             alert(value);
 
+            alert("끝");
             return value + " 의 타입은 " + typeof(value);
         }
-    </script>
-
+        */
+        </script>
 
     </body>
 </html>

@@ -5,9 +5,24 @@
     <body>
 
     <script>
-        var i = 100;  // 전역 변수 i를 선언 + 100을 입력
+        var i = 100;
+        var j = "300";
+        var k = i + j ;  // 전역 변수 i를 선언 + 100을 입력
         // console.log("변수 i에 들어간 값은"+ i + "입니다."); //console에 log를 찍을거야. i에 대체 뭐가 들어갔어?
-        window.alert("변수 i에 들어간 값은"+ i + "입니다.");
+        // console.log(typeof(i) ); // number
+        // console.log(typeof(j) ); // string
+        // console.log(typeof(k) ); // string
+
+        var returni = myfunction(i); 
+        var returnj =myfunction(j); 
+        var returnk =myfunction(k);    // 위에 있는 변수를 넣는다. 
+
+        function myfunction(value) {
+            console.log(typeof(value));  // 어떤 타입인지 console.log에 찍어~
+            alert(value);
+
+            return value + " 의 타입은 " + typeof(value);
+        }
     </script>
 
 

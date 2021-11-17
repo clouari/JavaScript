@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <button id="getname">이름 입력하기</button>
+        <p id="test"></p>
+        <script>
+            
+            document
+                .getElementById('getname')
+                .addEventListener('click', function () {
+                    test();
+                });
+            function test() {
+                var value = prompt("이름을 입력 해 주세요");
+                document.getElementById('text').innerHTML=(value + '님 안녕하세요.')
+            }
+
+            // document.getElementById('getname') .innerHTML = getname + '님 안녕하세요.' ;
+        </script>
+    </body>
+</html>

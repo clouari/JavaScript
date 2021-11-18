@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Form3</title>
+    </head>
+
+    <body id="body">
+        <button id="btn">이미지 바꾸기</button>
+        <button id="btn2">
+            <a href="form2.html">처음으로 돌아가기</a>
+        </button>
+
+        <img id="photo" src="IMG_A08753899428-1.jpeg" width="30%" height="90%">
+
+    </body>
+
+    <script>
+
+        var oldimage = document
+            .getElementById("photo")
+            .src;
+        document
+            .getElementById("btn")
+            .addEventListener("click", function () {
+                if (document.getElementById("photo").src == oldimage) {
+                    document
+                        .getElementById("photo")
+                        .src = "IMG_FF26553521FE-1.jpeg";
+                } else {
+                    document
+                        .getElementById("photo")
+                        .src = "IMG_A08753899428-1.jpeg";
+                }
+            });
+    </script>
+</html>

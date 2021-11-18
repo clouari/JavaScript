@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Form2</title>
+    </head>
+
+    <body id="body">
+        <button id="btn">이미지 바꾸기</button>
+        <button id="btn2">
+            <a href="form3.html">다른 이미지 보기</a>
+        </button>
+        <button id="btn3">스타일 적용하기</button>
+
+        <img id="photo" src="아이언맨.jpeg">
+
+    </body>
+
+    <script>
+
+        var oldimage = document
+            .getElementById("photo")
+            .src;
+        document
+            .getElementById("btn")
+            .addEventListener("click", function () {
+                if (document.getElementById("photo").src == oldimage) {
+                    document
+                        .getElementById("photo")
+                        .src = "토르.jpeg";
+                } else {
+                    document
+                        .getElementById("photo")
+                        .src = "아이언맨.jpeg";
+                }
+            });
+
+        document
+            .getElementById("btn3")
+            .addEventListener("click", function () {
+                document
+                    .getElementById("photo")
+                    .style
+                    .width = "50%" //width까지가 하나의 변수취급
+            });
+    </script>
+</html>

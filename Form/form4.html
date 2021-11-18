@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Form4 form이용하기</title>
+    </head>
+
+    <body id="body">
+        <input type="text" name="list" id="test" placeholder="이름을 입력하세요">
+        <br/>
+        <button id="btn">입력</button>
+        <p id="result"></p>
+
+        <input type="text" name="list2" id="test2" placeholder="이름을 입력하세요">
+        <br/>
+        <p id="result2"></p>
+    </body>
+
+    <script>
+        document
+            .getElementById("btn")
+            .addEventListener("click", function () {
+                let result = document
+                    .getElementById("test")
+                    .value;
+                document
+                    .getElementById("result")
+                    .innerHTML = result + "님 안녕하세요";
+            })
+
+        document
+            .getElementById("test2")
+            .addEventListener("keydown", function () {
+                let result = document
+                    .getElementById("test2")
+                    .value;
+                document
+                    .getElementById("result2")
+                    .innerHTML = result;
+            })
+    </script>
+</html>

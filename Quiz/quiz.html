@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Quiz</title>
+    </head>
+    <body>
+
+        <button id="btn">더하기</button>
+
+        <script>
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function(){
+                var num1 = prompt('숫자 1을 넣으세요');
+                var num2 = prompt('숫자 2를 넣으세요');
+
+                num1 = Number(num1);
+                num2 = Number(num2);
+
+            })
+
+            // const btn = document.getElementById('btn');
+            // btn.addEventListener('click', function () {
+
+            //     test();
+
+            // })
+
+            // function test() {
+            //     var num1 = prompt('숫자 1을 넣으세요');
+            //     var num2 = prompt('숫자 2를 넣으세요');
+
+            //     num1 = Number(num1);
+            //     num2 = Number(num2);
+
+            //     if (isNaN(num1) && isNaN(num2)) {
+            //         test();
+            //     } else {
+            //         document
+            //             .getElementById('btn')
+            //             .innerHTML
+            //     }
+
+                // let numberInput = "num1, num2"; alert(typeof numbeInput); let num =
+                // Number(str); alert(typeof num); var 변수 = parseInt(문자);  document
+                // .getElementById('inputNumber')     .addEventListener('click', function () {
+                // inputNumber();     }); const getNumber =
+                // document.getElementById("getNumber"); getNumber.innerHTML = sum(num1 +num2);
+        </script>
+    </body>
+</html>

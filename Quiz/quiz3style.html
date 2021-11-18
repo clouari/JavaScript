@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Quiz4</title>
+    </head>
+    <body>
+
+        <button id="btn">퀴즈4</button>
+        <p id="sum"></p>
+        <span id="sty1" style="color: blue;"></span>
+
+        </div>
+
+        <script>
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function () {
+                test();
+            })
+
+            function test() {
+                var num1 = prompt('숫자 하나를 넣으세요!')
+
+                num1 = Number(num1);
+                if (isNaN(num1)) {
+                    test();
+                } else {
+                    // console.log(document     .getElementById('btn')     .innerHTML);
+                    var str = '';
+                    for (var i = 1; i <= num1; i++) {
+                        if(i % 3 == 0){    
+                       str = str + '<span style="color:Red;">' + i + '</span>' + ' ';
+                        
+                       }
+                       else{
+                        str = str + i + ' ';
+
+                       }
+                    }
+                }
+
+                document
+                    .getElementById('sum')
+                    .innerHTML = str;
+
+                // document
+                //     .getElementById('sum')
+                //     .style
+                //     .color = "red";
+            }
+        </script>
+    </body>
+</html>

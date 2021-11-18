@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Form1</title>
+    </head>
+
+    <body id="body">
+        <button id="btn">이미지 바꾸기</button>
+
+        <img id="photo" src="아이언맨.jpeg">
+
+    </body>
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click",function(){
+            document.getElementById("photo").src = "토르.jpeg"     //셀렉터 선언
+        });
+        // const body = document.getElementById("body");
+        // body.innerHTML = "<div>12345</div>";
+
+
+    </script>
+</html>

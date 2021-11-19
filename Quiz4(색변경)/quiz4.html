@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>텍스트 입략빋아 색변경하기</title>
+    </head>
+    <body>
+        <button id="btn">텍스트 입력!</button>
+        <p id="text"></p>
+
+
+        <script>
+            document.getElementById("btn")
+            .addEventListener("click", function(){
+                input();
+            });
+
+            function input() {
+                var value = prompt("텍스트를 입력 해 주세요");
+                if(value == ""){
+                    alert("텍스트가 없습니다! 입력 해 주세요.");
+                    input();
+                }
+                else{
+                    var str = ''
+                    str = "<b>"+str+"</b>";
+                    document.getElementById("text")
+                    .innerHTML = str;
+                }
+            }
+
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>

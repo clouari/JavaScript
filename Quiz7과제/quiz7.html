@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Quiz7과제</title>
+    </head>
+
+    <body>
+        <button id="search">검색어를 입력 해 주세요</button>
+
+    </body>
+
+    <script>    
+
+    document
+        .getElementById("search")
+        .addEventListener("click", function () {
+            var search = prompt("검색어를 입력 해 주세요!");
+            document
+                .getElementById("search")
+                .innerText = search;
+            ret
+                .window
+                .open(
+                    "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&",
+                    "query=",
+                    "네이버",
+                    "channelmode = yes | no | 1 | 0",
+                    "false"
+                );
+            console.log("검색하기");
+        })
+
+    </script>
+</html>

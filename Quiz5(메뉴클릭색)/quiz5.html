@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>quiz5다시</title>
+        <style>
+            .D1{
+                background-color: blueviolet;
+                color: white;
+                block-size: 50px;
+            }
+            .D2{
+                background-color: pink;
+                color: black;
+                block-size: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="D1" id="ht">HTML</button>
+        <button class="D1" id="cs">CSS</button>
+        <button class="D1" id="js">JavaScript</button>
+
+        <div class="D2"></div>
+    </body>
+    <script>
+
+        document.getElementById("ht").addEventListener("click",function(){
+            change("ht");
+        });
+        document.getElementById("cs").addEventListener("click",function(){
+
+        });
+        document.getElementById("js").addEventListener("click",function(){
+
+        });        
+        function change(id){
+            document.getElementById(id).className = "D2"
+        }
+
+    </script>
+</html>

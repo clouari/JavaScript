@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>테이블받기</title>
+        <style type="text/css">
+        table, tr, td{
+            border: 1px solid red;
+            text-align: center;
+        }
+        td{
+            width: 30px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <button id="btn">칸 만들기</button>
+        <!-- <script>
+
+            const btn = document.getElementById('btn');
+            btn.addEventListener("click",function(){
+                    tryThis();
+            });
+            function tryThis() {
+                let wid1 = prompt("몇 칸을 받을까요?");
+                let height1 = prompt("몇 줄을 받을까요?");
+                wid1 = Number(wid1);
+                height1 = Number(height1);
+                if(isNaN(wid1 && height1)) {
+                    tryThis();
+                }
+                
+                
+                </script>
+                 -->
+                </body>
+                <script type="text/javascript">
+                    let wid1 = Number(prompt("몇 칸을 받을까요?"));
+                    let height1 = Number(prompt("몇 줄을 받을까요?"));
+                    var num = 0;
+                    document.write("<table>")
+                        for(i = 0; i < wid1;i++);
+                        {
+                            document.write("<tr>");
+                                for(k = 0; k <height1 ; k++);
+                                {
+                                    document.write("<td>"+num+"<td>");
+                                        num++
+                                }
+                                document.write("</tr>")
+                            }
+                                document.write("</table>");
+            
+               </script>
+                </html>

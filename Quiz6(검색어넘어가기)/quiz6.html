@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>검색창 만들기</title>
+        <style>
+            div{
+                border: 2px solid blueviolet;
+                width: 300px;
+            }
+            .D1{
+                block-size: 40px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="search">검색어를 입력 해 주세요</div>
+        <br />
+        
+        <button class="D1" id="naver">네이버</button>
+        <button class="D1" id="google">구글</button>
+        <button class="D1" id="daum">다음</button>
+
+    </body>
+    <script>
+        document.getElementById("search").addEventListener("click",function(){
+            var search = prompt("검색어를 입력 해 주세요");
+            document.getElementById("search").innerText = search; 
+        })
+        document.getElementById("naver").addEventListener("click",function(){
+            let text = document.getElementById("search").innerText;
+            document.location.href = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query="+text;
+        })
+        document.getElementById("google").addEventListener("click",function(){
+            let text = document.getElementById("search").innerText;
+            document.location.href = "https://www.google.com/search?q="+text;
+        })
+        document.getElementById("daum").addEventListener("click",function(){
+            let text = document.getElementById("search").innerText;
+            document.location.href = "https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q="+text;
+        })
+
+    </script>
+</html>
